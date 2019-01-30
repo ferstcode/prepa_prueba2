@@ -1,0 +1,19 @@
+<table class="table table-dark">
+  <thead>
+  
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Image</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  <%@products.each do |p|%>
+    <tr>
+
+      <td><%=  p.name%></td>
+      <td><%= image_tag p.image %></td>
+    </tr>
+    <% end %>
+   </tbody>
+</table>
